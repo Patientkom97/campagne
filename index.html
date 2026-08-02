@@ -5,38 +5,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rejoins la campagne</title>
 
+<!-- Lien vers votre fichier CSS -->
 <link rel="stylesheet" href="style.css">
 
+<!-- Bibliothèque html2canvas pour la capture -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
 </head>
 <body>
 
 <div class="container">
-
-<h1>Rejoins la campagne</h1>
-
-<input type="text" id="nom" placeholder="Votre nom">
-
-<input type="file" id="photo" accept="image/*">
-
-<button onclick="telecharger()">
-Télécharger mon affiche
-</button>
-
+    <h1>Rejoins la campagne</h1>
+    
+    <!-- Zone de saisie pour le nom -->
+    <input type="text" id="nom" placeholder="Votre nom complet">
+    
+    <!-- Zone de sélection de la photo -->
+    <input type="file" id="photo" accept="image/*">
+    
+    <!-- Bouton pour déclencher le téléchargement -->
+    <button onclick="telecharger()">
+        Télécharger mon affiche
+    </button>
 </div>
 
+<!-- C'est cette partie qui sera convertie en image -->
 <div id="affiche">
-   <h1>je n'ai pas choisi d'etre déplacé de guerre</h1> 
-
-<img src="img/affiche.png" class="fond">
-
-<img id="profil">
-
-<h2 id="nomAffiche"></h2>
-
+    <!-- Remplacez le src par le nom exact de votre image de template -->
+    <img src="design.png" class="fond" alt="Fond de l'affiche">
+    
+    <!-- Conteneur de la photo de profil -->
+    <div class="profil-container">
+        <img id="profil" src="" alt="">
+    </div>
+    
+    <!-- Le Nom de la personne -->
+    <h2 id="nomAffiche"> <input type="text" id="nomInput" placeholder="Votre nom"> </h2>
 </div>
 
+<!-- Lien vers votre fichier JavaScript -->
 <script src="script.js"></script>
 
 </body>
