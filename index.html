@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rejoins la campagne</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Rejoins la campagne</h1>
+
+<input type="text" id="nom" placeholder="Votre nom">
+
+<input type="file" id="photo" accept="image/*">
+
+<button onclick="telecharger()">
+Télécharger mon affiche
+</button>
+
+</div>
+
+<div id="affiche">
+   <h1>je n'ai pas choisi d'etre déplacé de guerre</h1> 
+
+<img src="img/affiche.png" class="fond">
+
+<img id="profil">
+
+<h2 id="nomAffiche"></h2>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
