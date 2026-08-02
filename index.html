@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rejoins la campagne</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejoins la campagne</title>
 
-<!-- Lien vers votre fichier CSS -->
-<link rel="stylesheet" href="style.css">
+    <!-- Fichier CSS -->
+    <link rel="stylesheet" href="style.css">
 
-<!-- Bibliothèque html2canvas pour la capture -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-
+    <!-- Bibliothèque html2canvas pour la capture -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
 
@@ -20,30 +19,35 @@
     <!-- Zone de saisie pour le nom -->
     <input type="text" id="nom" placeholder="Votre nom complet">
     
+    <!-- Zone de saisie pour le message (préremplie) -->
+    <textarea id="messageInput" placeholder="Votre message d'interpellation" rows="3">Nous n’avons pas choisi de fuir nos terres. Nous avons droit à la sécurité, à la dignité et à la protection. Gouvernement de la République, votre devoir est de protéger chaque citoyen où qu’il se trouve. Ne laissez pas les familles déplacées vivre dans l’oubli. Agissez maintenant pour la paix, la justice et le retour sécurisé des déplacés dans leurs foyers.</textarea>
+    
     <!-- Zone de sélection de la photo -->
     <input type="file" id="photo" accept="image/*">
     
-    <!-- Bouton pour déclencher le téléchargement -->
+    <!-- Bouton de téléchargement -->
     <button onclick="telecharger()">
         Télécharger mon affiche
     </button>
 </div>
 
-<!-- C'est cette partie qui sera convertie en image -->
+<!-- Zone de l'affiche à capturer -->
 <div id="affiche">
-    <!-- Remplacez le src par le nom exact de votre image de template -->
     <img src="design.png" class="fond" alt="Fond de l'affiche">
     
-    <!-- Conteneur de la photo de profil -->
+    <!-- Photo de profil -->
     <div class="profil-container">
-        <img id="profil" src="" alt="">
+        <img height="160" width="140" id="profil" src="" alt="Photo de profil">
     </div>
     
-    <!-- Le Nom de la personne -->
-    <h2 id="nomAffiche"> <input type="text" id="nomInput" placeholder="Votre nom"> </h2>
+    <!-- NOM -->
+    <h2 id="nomAffiche">VOTRE NOM ICI</h2>
+
+    <!-- MESSAGE INTERPELLATEUR EXACT -->
+    <p id="messageAffiche">NOUS N’AVONS PAS CHOISI DE FUIR NOS TERRES. NOUS AVONS DROIT À LA SÉCURITÉ, À LA DIGNITÉ ET À LA PROTECTION. GOUVERNEMENT DE LA RÉPUBLIQUE, VOTRE DEVOIR EST DE PROTÉGER CHAQUE CITOYEN OÙ QU’IL SE TROUVE. NE LAISSEZ PAS LES FAMILLES DÉPLACÉES VIVRE DANS L’OUBLI. AGISSEZ MAINTENANT POUR LA PAIX, LA JUSTICE ET LE RETOUR SÉCURISÉ DES DÉPLACÉS DANS LEURS FOYERS.</p>
 </div>
 
-<!-- Lien vers votre fichier JavaScript -->
+<!-- Fichier JavaScript -->
 <script src="script.js"></script>
 
 </body>
