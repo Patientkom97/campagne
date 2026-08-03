@@ -69,7 +69,7 @@ button:hover {
     height: 1450px;
     position: relative;
     overflow: hidden;
-    background-image: url(./img/design.jpg);
+    background-image: url(./img/design.png);
    }
 S
 
@@ -115,19 +115,7 @@ S
     text-align: center;
     line-height: 1.15;
     word-wrap: break-word;
-    z-index: 10;
-}
-#messageAffiche {
-    position: absolute;
-    bottom: 550px;         /* Remonté au-dessus de la foule pour rester sur fond clair */
-    left: 400px;           /* Aligné dans la partie blanche de droite */
-    width: 560px;          /* Largeur ajustée à la zone blanche */
-    color: #1a2a40;        /* Sombre pour un contraste parfait sur fond blanc */
-    font-size: 24px;       /* Ajusté pour que le paragraphe complet tienne bien */
-    font-weight: 700;
-    line-height: 1.35;
-    text-align: justify;   /* Texte bien aligné à gauche et à droite */
-    z-index: 10;
+    z-index: 10;s
 }
 /* ==========================
    RESPONSIVE MOBILE
@@ -188,5 +176,3 @@ S
         font-size:2.8vw;
         line-height:1.3;
     }
-
-}
