@@ -129,3 +129,64 @@ S
     text-align: justify;   /* Texte bien aligné à gauche et à droite */
     z-index: 10;
 }
+/* ==========================
+   RESPONSIVE MOBILE
+   ========================== */
+
+@media screen and (max-width: 768px) {
+
+    body{
+        padding: 15px;
+    }
+
+    .container{
+        padding:20px;
+        width:100%;
+    }
+
+    .container h1{
+        font-size:24px;
+    }
+
+    .container input,
+    .container textarea,
+    button{
+        font-size:16px;
+    }
+
+    /* L'affiche garde ses proportions */
+    #affiche{
+        width: 100vw;
+        height: auto;
+        aspect-ratio: 1080 / 1450;
+
+        background-size: contain; /* ou cover selon le résultat souhaité */
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    }
+
+    /* Toutes les positions restent proportionnelles */
+    .profil-container{
+        top:5.5%;
+        left:6%;
+        width:37%;
+        height:27.5%;
+    }
+
+    #nomAffiche{
+        top:34.5%;
+        left:41.5%;
+        width:37%;
+        font-size:4vw;
+    }
+
+    #messageAffiche{
+        bottom:37.5%;
+        left:37%;
+        width:52%;
+        font-size:2.8vw;
+        line-height:1.3;
+    }
+
+}
