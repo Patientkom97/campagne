@@ -146,7 +146,6 @@ S
     #affiche{
         width: 100vw;
         height: auto;
-        aspect-ratio: 1080 / 1450;
 
         background-size: contain; /* ou cover selon le résultat souhaité */
         background-repeat: no-repeat;
